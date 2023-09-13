@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-05 09:56:37 AM"/>
+        <attribute name="created" value="TEVOT1ZPO0xBUFRPUC0wVTlWRkZKRjsyMDIzLTA5LTA1OzA5OjI2OjM5IEFNOzI4MTU="/>
+        <attribute name="edited" value="TEVOT1ZPO0xBUFRPUC0wVTlWRkZKRjsyMDIzLTA5LTA1OzA5OjU2OjM3IEFNOzE7MjkyNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="usia, penghasilan" type="Integer" array="False" size=""/>
+            <declare name="blt" type="Boolean" array="False" size=""/>
+            <output expression="&quot;Masukan Usia: &quot;" newline="True"/>
+            <input variable="usia"/>
+            <output expression="&quot;Masukan Penghasilan Perbulan: &quot;" newline="True"/>
+            <input variable="penghasilan"/>
+            <if expression="usia&gt;18&amp;&amp;penghasilan&lt;=500000">
+                <then>
+                    <assign variable="blt" expression="true"/>
+                    <output expression="&quot;Anda Mendapat BLT&quot;" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="blt" expression="false"/>
+                    <output expression="&quot;Anda Tidak Mendapatkan BLT&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

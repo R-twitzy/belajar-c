@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-01 03:13:33 PM"/>
+        <attribute name="created" value="TEVOT1ZPO0xBUFRPUC0wVTlWRkZKRjsyMDIzLTA5LTAxOzAyOjQ0OjM5IFBNOzI4MTk="/>
+        <attribute name="edited" value="TEVOT1ZPO0xBUFRPUC0wVTlWRkZKRjsyMDIzLTA5LTAxOzAzOjEzOjMzIFBNOzE7MjkxOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="r" type="Integer" array="False" size=""/>
+            <declare name="v" type="Real" array="False" size=""/>
+            <input variable="r"/>
+            <assign variable="v" expression="4/3*pi*r^3"/>
+            <output expression="v" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

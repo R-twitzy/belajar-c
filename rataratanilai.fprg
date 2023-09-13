@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-09-05 07:14:38 PM"/>
+        <attribute name="created" value="TEVOT1ZPO0xBUFRPUC0wVTlWRkZKRjsyMDIzLTA5LTA1OzA5OjU2OjQwIEFNOzI4MTA="/>
+        <attribute name="edited" value="TEVOT1ZPO0xBUFRPUC0wVTlWRkZKRjsyMDIzLTA5LTA1OzA3OjE0OjM4IFBNOzI7MjkzMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nilai" type="Integer" array="True" size="5"/>
+            <declare name="i, x" type="Integer" array="False" size=""/>
+            <declare name="ratarata" type="Real" array="False" size=""/>
+            <assign variable="x" expression="0"/>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <output expression="&quot;Masukan Nilai &quot;" newline="False"/>
+                <output expression="i+1" newline="True"/>
+                <input variable="nilai[i]"/>
+                <assign variable="x" expression="x+nilai[i]"/>
+            </for>
+            <assign variable="ratarata" expression="x/5"/>
+            <output expression="&quot;Rata-rata anda: &quot;" newline="False"/>
+            <output expression="ratarata" newline="True"/>
+            <if expression="ratarata&gt;50">
+                <then>
+                    <output expression="&quot;Selamat Anda Lulus&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Anda Belum Lulus&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
