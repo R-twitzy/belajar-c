@@ -8,11 +8,12 @@ int main()
 
     cin >> i;
 
-    if (i > 0 && i%2 ==0)
+    if (i > 0 && i % 2 == 0)
     {
 
         cout << i;
     }
     else
-    {}
+    {
+    }
 }
