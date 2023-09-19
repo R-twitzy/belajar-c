@@ -3,12 +3,26 @@
 
 using namespace std;
 
-int main(){
+int main()
+{
     double a;
 
     cin >> a;
 
-    cout << floor(a) << ' ' << ceil(a) <<endl;
+    int z = trunc(a);
+
+    if (z > a)
+    {
+        cout << z - 1 << ' ' << z << endl;
+    }
+    else if (z < a)
+    {
+        cout << z << ' ' << z + 1 << endl;
+    }
+    else
+    {
+        cout << z << ' ' << z << endl;
+    }
 
     return 0;
 }
