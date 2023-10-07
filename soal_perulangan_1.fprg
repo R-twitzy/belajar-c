@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-07 04:13:53 PM"/>
+        <attribute name="created" value="TEVOT1ZPO0xBUFRPUC0wVTlWRkZKRjsyMDIzLTEwLTA3OzA0OjAyOjA2IFBNOzI4MDc="/>
+        <attribute name="edited" value="TEVOT1ZPO0xBUFRPUC0wVTlWRkZKRjsyMDIzLTEwLTA3OzA0OjEzOjUzIFBNOzE7MjkxOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A, X, i" type="Integer" array="False" size=""/>
+            <output expression="&quot;Input 10 buah bilangan&quot;" newline="True"/>
+            <output expression="&quot;Bilangan pertama: &quot;" newline="False"/>
+            <input variable="A"/>
+            <assign variable="X" expression="A"/>
+            <for variable="i" start="1" end="9" direction="inc" step="1">
+                <output expression="&quot;Bilangan ke &quot; &amp; i+1 &amp; &quot; : &quot;" newline="False"/>
+                <input variable="A"/>
+                <if expression="A &gt; X">
+                    <then>
+                        <assign variable="X" expression="A"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="X" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
