@@ -6,12 +6,13 @@ int main()
     cout << "Enter the number of positive integers :";
     cin >> N;
     sum = 0;
-    counter = 0;
-    while (counter <= N)
+    counter = 1;
+    do
     {
-       sum += counter;
-       counter++;
-    }
+        sum += counter;
+        counter++;
+    } while (counter <= N);
+
     cout << "The sum of the first " << N
          << " positive integers is " << sum << endl;
     return 0;
