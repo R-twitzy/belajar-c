@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-07 04:22:07 PM"/>
+        <attribute name="created" value="TEVOT1ZPO0xBUFRPUC0wVTlWRkZKRjsyMDIzLTEwLTA3OzA0OjE3OjA5IFBNOzI4MTY="/>
+        <attribute name="edited" value="TEVOT1ZPO0xBUFRPUC0wVTlWRkZKRjsyMDIzLTEwLTA3OzA0OjIyOjA3IFBNOzE7MjkxOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="MAKS, baris, kolom, hasil" type="Integer" array="False" size=""/>
+            <assign variable="MAKS" expression="8"/>
+            <for variable="baris" start="1" end="MAKS" direction="inc" step="1">
+                <for variable="kolom" start="1" end="MAKS" direction="inc" step="1">
+                    <assign variable="hasil" expression="baris*kolom"/>
+                    <output expression="hasil" newline="False"/>
+                </for>
+                <output expression="&quot; &quot;" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
