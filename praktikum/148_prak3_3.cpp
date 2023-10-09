@@ -11,7 +11,7 @@ int main()
 
     A = rand() %10 + 1;
     B = rand() %90 + A;
-    key = rand() %B + A;
+    key = rand() %(B-A) + A;
 
     cout << "KELUARAN anda \t KELUARAN penguji" << endl;
     cout << "\t \t " << A << ' ' << B << endl;
