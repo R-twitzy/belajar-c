@@ -10,8 +10,8 @@ int main()
     srand(time(NULL));
 
     A = rand() %10 + 1;
-    B = rand() %100;
-    key = rand() %B + 1;
+    B = rand() %100 + A;
+    key = rand() %B + A;
 
     cout << "KELUARAN anda \t KELUARAN penguji" << endl;
     cout << "\t \t " << A << ' ' << B << endl;
