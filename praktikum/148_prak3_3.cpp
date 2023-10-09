@@ -10,7 +10,7 @@ int main()
     srand(time(NULL));
 
     A = rand() %10 + 1;
-    B = rand() %100 + A;
+    B = rand() %90 + A;
     key = rand() %B + A;
 
     cout << "KELUARAN anda \t KELUARAN penguji" << endl;
