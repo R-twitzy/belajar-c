@@ -11,6 +11,8 @@ bool isAnagram(string x, string y){
     transform(x.begin(), x.end(), x.begin(), ::tolower);
     transform(y.begin(), y.end(), y.begin(), ::tolower);
 
+    if (x == y) return false;
+
     // mengurutkan kedua string
     sort(x.begin(), x.end());
     sort(y.begin(), y.end());
