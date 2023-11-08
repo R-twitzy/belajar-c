@@ -3,9 +3,12 @@
 
 using namespace std;
 
-int main(){
+int main()
+{
 
-    int p = strcmp("Informatika","Informatika"); 
-
-    cout << p;
+    int A;
+    int &B = A;
+    //A = 10;
+    B = 20;
+    cout << A;
 }
