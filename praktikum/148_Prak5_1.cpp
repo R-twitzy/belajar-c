@@ -2,13 +2,15 @@
 
 using namespace std;
 
-void printTengah(int arr[], int size){
-    int indexTengah = size/2;
+void printTengah(int arr[], int size)
+{
+    int indexTengah = size / 2;
 
-    cout << arr[indexTengah-1] << arr[indexTengah] << arr[indexTengah+1] << endl;
+    cout << arr[indexTengah - 1] << arr[indexTengah] << arr[indexTengah + 1] << endl;
 }
 
-int main(){
+int main()
+{
     int T;
 
     cin >> T;
@@ -19,7 +21,7 @@ int main(){
     {
         cin >> A[i];
     }
-    
+
     printTengah(A, T);
 
     return 0;
