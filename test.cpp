@@ -1,20 +1,22 @@
 #include <iostream>
-#include <string.h>
 
 using namespace std;
 
-int main() {
+int main()
+{
+  int n, tmp=2;
 
-      int j=9;
+  cout << "masukan tinggi segi3: ";
+  cin >> n;
 
+  for (int i =1; i <= n; i++)
+  {
+    for (int j = 0; j < i; j++)
     {
-
-          int a = 10;
-
-         cout << j;
-
-     }
-
-     //cout <<a;
-
- }
+      cout << tmp << " ";
+      tmp+=2;
+    }
+    cout << endl;
+  }
+  
+}
