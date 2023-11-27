@@ -3,23 +3,24 @@
 
 using namespace std;
 
-int main(){
+int main()
+{
     string kata;
     cin >> kata;
 
-    int vokal= 0;
-    const char* tmp= kata.c_str();
+    int vokal = 0;
+    const char *tmp = kata.c_str();
 
-    while (*tmp != '\0') {
-    // Memeriksa apakah karakter saat ini adalah vokal
-    if (*tmp == 'a' || *tmp == 'i' || *tmp == 'u' || *tmp == 'e' || *tmp == 'o') {
-      // Menambahkan 1 ke jumlah vokal
-      vokal++;
+    while (*tmp != '\0')
+    {
+        if (*tmp == 'a' || *tmp == 'i' || *tmp == 'u' || *tmp == 'e' || *tmp == 'o')
+        {
+            vokal++;
+        }
+
+        // next char
+        tmp++;
     }
-
-    // Majukan pointer ke karakter berikutnya
-    tmp++;
-  }
 
     cout << vokal << endl;
     return 0;
