@@ -8,7 +8,7 @@ int main(){
     cin >> kata;
 
     int vokal= 0;
-    char* tmp= kata.c_str();
+    const char* tmp= kata.c_str();
 
     while (*tmp != '\0') {
     // Memeriksa apakah karakter saat ini adalah vokal
