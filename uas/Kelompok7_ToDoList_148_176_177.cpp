@@ -157,7 +157,7 @@ void simpan(vector<hari> &daftarHari)
             file << "\n";
         }
         file.close();
-        cout << "To-Do List berhasil disimpan ke dalam file ToDoList.txt\n";
+        cout << "Berhasil disimpan ke dalam file ToDoList.txt\n";
     }
     else
     {
@@ -215,7 +215,7 @@ int main()
             break;
 
         default:
-            cout << "Pilihan tidak valid. Silakan masukkan pilihan yang benar.\n";
+            cout << "Pilihan tidak valid. Masukkan pilihan yang benar.\n";
             break;
         }
     } while (pilih != '6');
