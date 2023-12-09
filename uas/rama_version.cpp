@@ -22,7 +22,7 @@ void printToDoList(vector<hari> &daftarHari)
             int i = 0;
             while (hari.kegiatan[i] != "done")
             {
-                file << "\t" << i+1 << ". " << hari.kegiatan[i] << "\n";
+                file << "\t" << i + 1 << ". " << hari.kegiatan[i] << "\n";
                 i++;
             };
             file << "\n";
@@ -51,16 +51,15 @@ int main()
             if (line.find("Hari: ") == 0)
             {
                 hari.hari = line.substr(6); // Mengambil nama hari setelah "Hari: "
-                int i =0;
-                while (getline(readFile, line) && line.find("\t" ) == 0)
+                int i = 0;
+                while (getline(readFile, line) && line.find("\t") == 0)
                 {
                     hari.kegiatan[i] = line.substr(4); // Mengambil kegiatan setelah "nomor urut"
                     i++;
                 }
-                hari.kegiatan[i] = "done" ;
+                hari.kegiatan[i] = "done";
                 daftarhari.push_back(hari);
             }
-            
         }
         readFile.close();
     }
@@ -132,7 +131,29 @@ int main()
         }
         case '3':
         {
+            int index;
+            char tmp;
+            cout << "Masukkan index hari yang ingin dihapus: ";
+            cin >> index;
+            while (tmp != 'y' && tmp != 'n')
+            {
+                cout << "Apakah anda yakin(y/n)?  ";
+                cin >> tmp;
+            }
 
+            switch (tmp)
+            {
+            case 'y':
+                daftarhari.erase(daftarhari.begin() + index);
+                cout << "\nHari " << daftarhari[index].hari << " berhasil dihapus\n";
+                break;
+
+            default:
+                cout << "\nHari " << daftarhari[index].hari << " tidak dihapus\n";
+                break;
+            }
+            tmp = ' ';
+            break;
         }
         case '4':
         {
