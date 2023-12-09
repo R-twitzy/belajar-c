@@ -1,10 +1,3 @@
-Hari: selasa
-	1. turu
-
 Hari: senin
-	1. sapu
-	2. pel
-
-Hari: rabu
-	1. makan
+	1. turu
 

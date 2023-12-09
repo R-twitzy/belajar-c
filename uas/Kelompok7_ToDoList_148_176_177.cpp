@@ -39,7 +39,6 @@ void printToDoList(vector<hari> &daftarHari)
 int main()
 {
     vector<hari> daftarhari;
-    // int hariKe[100];
 
     ifstream readFile("To_Do_List.txt");
     if (readFile.is_open())
@@ -71,12 +70,13 @@ int main()
     char pilih;
     do
     {
-        cout << "\nMenu:\n";
+        cout << "================================================================\n";
+        cout << "PILIHAN:\n";
         cout << "1. Tambah Hari\n";
         cout << "2. Geser Hari\n";
         cout << "3. Hapus Hari\n";
         cout << "4. Cari Kegiatan\n";
-        cout << "5. Simpan\n";
+        cout << "5. Simpan/Perbarui\n";
         cout << "6. Keluar\n";
         cout << "Pilih: ";
         cin >> pilih;
@@ -105,6 +105,7 @@ int main()
 
             cout << endl;
             daftarhari.push_back(newTask);
+            cout << "\nHari berhasil ditambahkan\n";
             break;
         }
         case '2':
@@ -125,7 +126,7 @@ int main()
             }
             else
             {
-                cout << "Tidak dapat memindahkan kegiatan.\n";
+                cout << "Tidak dapat memindahkan hari.\n";
             }
             break;
         }
@@ -145,11 +146,11 @@ int main()
             {
             case 'y':
                 daftarhari.erase(daftarhari.begin() + index);
-                cout << "\nHari " << daftarhari[index].hari << " berhasil dihapus\n";
+                cout << "\nHari berhasil dihapus\n";
                 break;
 
             default:
-                cout << "\nHari " << daftarhari[index].hari << " tidak dihapus\n";
+                cout << "\nHari tidak dihapus\n";
                 break;
             }
             tmp = ' ';
