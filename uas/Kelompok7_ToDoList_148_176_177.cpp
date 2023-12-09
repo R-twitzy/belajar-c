@@ -185,7 +185,8 @@ int main()
         cout << "Pilih: ";
         cin >> pilih;
         cout << "\n";
-        cin.ignore(); // Membersihkan newline dari buffer
+        // menghapus buffer input
+        cin.ignore();
 
         switch (pilih)
         {
