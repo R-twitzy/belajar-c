@@ -1,0 +1,17 @@
+Hari: selasa
+	1. turu
+
+Hari: senin
+	1. sapu
+	2. pel
+
+Hari: rabu
+	1. makan
+
+Hari: kamis
+	1. 1
+	2. 2
+	3. 3
+	4. 4
+	5. 5
+
