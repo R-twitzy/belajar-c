@@ -1,0 +1,8 @@
+Hari: senin
+	1. sapu
+	2. turu
+	3. pel
+
+Hari: selasa
+	1. turu
+
