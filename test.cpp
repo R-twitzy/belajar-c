@@ -7,28 +7,44 @@ int main()
   int n;
   cin >> n;
 
-  struct tst
+  struct hari
   {
-    int id;
-    string name;
-  } test[n];
+    string tugas[100];
+  } hari[n];
 
-  for (int i = 0; i < n; i++)
+  string tmp;
+
+  int i = 0, j = 0;
+  while ( i <= n)
   {
-    cout << "masukan id:";
-    cin >> test[i].id;
-    cout << "name:";
-    cin >> test[i].name;
+    cout << "masukan tugas";
+    cin >> tmp;
+    if (tmp == "<")
+    {
+      i--;
+    }
+    else if (tmp == ">")
+    {
+      i++;
+    }
+    else
+    {
+      hari[i].tugas[j] = tmp;
+      j++;
+    }
+    
   }
-  
-  cout << "hasil:" << endl;
-  for (int i = 0; i < n; i++)
+
+
+
+  for (int x = 0; x < n; x++)
   {
-    cout << "id: " << test[i].id << endl;
-    cout << "name: " << test[i].name << endl;
-    cout << endl;
+    for (int y = 0; y < 5; y++)
+    {
+      cout << hari[x].tugas[y] << endl;
+    }
+    
   }
-  
   
 
   return 0;
