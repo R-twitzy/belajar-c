@@ -6,3 +6,7 @@ Hari: senin
 Hari: selasa
 	1. turu
 
+Hari: rabu
+	1. sapu
+	2. makan
+
